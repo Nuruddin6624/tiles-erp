@@ -293,7 +293,7 @@ const ReportsDashboard: React.FC = () => {
                {pipeline.map(so => (
                  <div key={so.id} className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between">
                     <div><h3 className="text-xs font-black text-slate-800 uppercase">SO: {so.id}</h3><p className="text-[9px] text-slate-400 font-bold uppercase">Order: {so.orderRef} • {so.truckNo || 'No Truck'}</p></div>
-                    <span className={`text-[8px] font-black uppercase px-2 py-1 rounded ${so.isUnloaded ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>{so.isUnloaded ? 'At Site' : 'In Transit'}</span>
+                    <span className={`text-[8px] font-black uppercase px-2 py-1 rounded ${so.isUnloaded ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>{so.isUnloaded ? 'Unloaded' : 'In Transit'}</span>
                  </div>
                ))}
             </div>
